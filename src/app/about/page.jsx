@@ -109,8 +109,8 @@ const About = () => {
       <section className={styles.partnersSection}>
         <h2 className={styles.title}>Our Partners</h2>
         <div className={styles.logos}>
-          <Image src="/tencent.png" alt="Partner 1" className={styles.logo} />
-          <Image src="/enflame.png" alt="Partner 2" className={styles.logo} />
+          <Image src="/tencent.png" alt="Partner 1" width={100} height={100} className={styles.logo} />
+          <Image src="/enflame.png" alt="Partner 2" width={100} height={100} className={styles.logo} />
         </div>
       </section>
     </div>

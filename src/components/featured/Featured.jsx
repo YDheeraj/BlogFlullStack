@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./featured.module.css"
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Featured = () => {
   return (
@@ -18,7 +19,9 @@ const Featured = () => {
            Dive into the world of technology where AI, GPUs, and advanced computing converge. Here, we explore the latest trends, breakthroughs, and insights shaping our digital future.<br></br>
            From artificial intelligence to the nuances of large language models, our articles are designed to inform and inspire.
           </p>
+          <Link href={`/posts/The_Evolution_and_Future_of_Artificial_Intelligence`}> 
           <button className="button">Read More</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import BlogCards from "@/components/blogcards/BlogCards"
 import Testimonials from "@/components/testimonials/Testimonials"
 
 import Category from "@/components/categoryList/CategoryList"
+import Link from "next/link";
 
 interface SearchParams {
   page?: string;
@@ -27,7 +28,9 @@ export default function Home({ searchParams }: { searchParams: SearchParams }) {
             designed to solve complex challenges, enhance decision-making, and
             unlock new opportunities for growth.
           </p>
+          <Link href={`/about`}>
           <button className="button">Read More</button>
+          </Link>
         </div>
         <div className={styles.holoContainer}>
         <ParticlesBackground />
