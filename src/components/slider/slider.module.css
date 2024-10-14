@@ -1,0 +1,148 @@
+.swiperContainer {
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.swiperSlides {
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* slide 2 */
+.slideContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px;
+}
+
+.slideRow_1{
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContainerH2{
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.textContainerH3{
+  margin: 35px 0px;
+  color: var(--softTextColor);
+}
+
+.slideRow_2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+
+.slideRow_2_row{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide_H4{
+  margin: 15px;
+  color: var(--softTextColor);
+  text-align: center;
+}
+
+.slideRow_2_row p{
+  text-align: center;
+  color: var(--softTextColor);
+}
+
+.slide_2_Row_2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.slideRow_2_row span{
+  color: var(--CardBgColor);
+}
+
+.slideRow_2_row ul p{
+  text-align: left;
+}
+
+
+
+
+@media screen and (max-width:1280px) {
+
+}
+
+@media screen and (max-width:1024px) {
+  .textContainerH2{
+    text-align: center;
+  }
+
+  .slideRow_2_row span{
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .swiperContainer {
+    height: 1000px;
+ }
+
+  .slideRow_2{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slideRow_2_row{
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .slide_2_Row_2{
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .textContainerH3{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:640px) {
+
+  .swiperContainer {
+    height: 1200px;
+ }
+
+  .textContainerH2{
+    font-size: 36px;
+  }
+  .textContainerH3{
+    text-align: center;
+  }
+}

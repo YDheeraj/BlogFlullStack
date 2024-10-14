@@ -1,0 +1,142 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 50px 0px;
+}
+
+.content{
+  width: 80%;
+}
+
+.card {
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--softTextColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.card .formContainer {
+    margin-right: 16px;
+    display: flex;
+}
+
+.card .left {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.card .right {
+    width: 50%;
+}
+
+.card .left img {
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+}
+
+.card .form input, .card textarea {
+    width: 100%;
+    outline: none;
+    background: none;
+    border: none;
+    border: 2px solid var(--softTextColor);
+    padding: 20px 20px;
+    margin: 5px auto;
+    border-radius: 10px;
+    color: var(--textColor);
+}
+
+.contactSection {
+    text-align: center;
+  }
+  
+  .sectionHeading {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: var(--textColor);
+  }
+  
+  
+  .contactInfo, .addressSection {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+  }
+  
+  .contactColumn, .addressColumn {
+    flex: 1;
+    padding: 20px 16px;
+  }
+  
+  .textLight {
+    font-size: 16px;
+    color: var(--softTextColor);
+  }
+  
+  .textLight a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .textLight a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contactInfo, .addressSection {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card .left {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .card .right{
+        width: 100%;
+    }
+
+    .card .formContainer{
+        margin-right: 0px;
+    }
+
+  }
+  
+
+  @media screen and (max-width: 500px) {
+    .contact-container {
+        overflow: hidden;
+    }
+    .card .left {
+        height: 30vh;
+    }
+
+    .card {
+        margin-bottom: 50px;
+    }
+
+    .card .formContainer {
+        flex-direction: column;
+    }
+
+    .card .right {
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+    }
+}

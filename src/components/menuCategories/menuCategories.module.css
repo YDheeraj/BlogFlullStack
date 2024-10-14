@@ -1,0 +1,15 @@
+.categoryList{
+    margin-top: 35px;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.categoryItem{
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: var(--CardBgColor);
+    color: var(--softTextColor);
+}
