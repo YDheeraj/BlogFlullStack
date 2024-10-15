@@ -16,7 +16,6 @@ const getData = async () => {
 
 const MenuPosts = async ({ withImage }) => {
   const { latestPosts } = await getData();
-  console.log(latestPosts[0]);
 
   return (
     <div className={styles.items}>

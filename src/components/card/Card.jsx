@@ -4,9 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { title } from 'process'
 
-const Card = ({key,item}) => {
+const Card = ({keyid,item}) => {
     return (
-        <div className={styles.container} key={key}>
+        <div className={styles.container} key={keyid}>
             {item.img && (
 
                 <div className={styles.imageContainer}>

@@ -4,8 +4,6 @@ import ParticlesBackground from "@/components/partical/ParticlesBackground"
 import Slider from "@/components/slider/Slider"
 import BlogCards from "@/components/blogcards/BlogCards"
 import Testimonials from "@/components/testimonials/Testimonials"
-
-import Category from "@/components/categoryList/CategoryList"
 import Link from "next/link";
 
 interface SearchParams {
