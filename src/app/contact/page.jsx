@@ -94,7 +94,7 @@ const Contact = () => {
       <div className={styles.content}>
         <div className={styles.card}>
           <div className={styles.left}>
-            <Image alt="contact-us" src="/contactus.jpg" />
+            <Image alt="contact-us" src="/contactus.jpg" width={500} height={300} />
           </div>
           <div className={styles.right}>
             <h2>Send your message</h2>
