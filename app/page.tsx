@@ -1,9 +1,9 @@
 import Image from "next/image";
 import styles from "./homepage.module.css";
-import ParticlesBackground from "/components/partical/ParticlesBackground"
-import Slider from "/components/slider/Slider"
-import BlogCards from "/components/blogcards/BlogCards"
-import Testimonials from "/components/testimonials/Testimonials"
+import ParticlesBackground from "../components/partical/ParticlesBackground"
+import Slider from "../components/slider/Slider"
+import BlogCards from "../components/blogcards/BlogCards"
+import Testimonials from "../components/testimonials/Testimonials"
 import Link from "next/link";
 
 interface SearchParams {
