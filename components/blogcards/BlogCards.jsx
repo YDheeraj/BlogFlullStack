@@ -4,7 +4,7 @@ import styles from './blogCard.module.css';
 import React from "react";
 
 const getData = async () => {
-    const res = await fetch("http://localhost:3000/api/latestposts", {
+    const res = await fetch("https://blog-flull-stack.vercel.app/api/latestposts", {
         cache: "no-store",
     });
 

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from "./menuPosts.module.css";
 
 const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/popularposts", {
+  const res = await fetch("https://blog-flull-stack.vercel.app/api/popularposts", {
     cache: "no-store",
   });
 
