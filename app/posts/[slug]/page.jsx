@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 
 const getData = async (slug) => {
-    const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
+    const res = await fetch(`https://blog-flull-stack.vercel.app/api/posts/${slug}`, {
       cache: "no-store",
     });
   

@@ -6,7 +6,6 @@ import Footer from "../components/footer/Footer";
 import {ThemeContextProvider} from "../context/ThemeContext";
 import ThemeProvider from "../Providers/ThemeProvider"
 import AuthProvider from "../Providers/AuthProvider"
-import ParticlesBackground from "../components/partical/ParticlesBackground"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

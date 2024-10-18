@@ -8,7 +8,9 @@ import AuthLink from '/components/authLinks/AuthLinks'
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.logo}>Dquotes </div>
+      <div className={styles.logo}>
+        <Image src="/logo.png" alt='logo' fill></Image>
+      </div>
       <div className={styles.links}>
         <ThemeToggle></ThemeToggle>
         <Link href='/' className={styles.link}>Homepage</Link>

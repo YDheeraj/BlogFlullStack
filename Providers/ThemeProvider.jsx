@@ -2,7 +2,6 @@
 
 import React, { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from "/context/ThemeContext"
-import ParticlesBackground from "/components/partical/ParticlesBackground"
 
 
 const ThemeProvider = ({ children }) => {

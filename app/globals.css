@@ -59,6 +59,7 @@ a{
 
 .button:hover{
   background-color: var(--btnHovColor);
+  cursor: pointer;
 }
 
 .container{

@@ -3,7 +3,6 @@ import styles from "./blogPage.module.css"
 import Featured from "/components/featured/Featured"
 import Category from "/components/categoryList/CategoryList"
 import CardList from "/components/cardList/CardList"
-import Menu from "/components/menu/Menu"
 
 
 const BlogPage = ({searchParams}) => {

@@ -3,6 +3,7 @@ import React from 'react';
 import styles from "./contact.module.css";
 import { useRef, useState } from 'react';
 import Image from 'next/image';
+import emailjs from 'emailjs-com';
 
 
 const Contact = () => {

@@ -3,15 +3,21 @@
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    /* width: 100%; */
 }
 
 .logo {
     display: flex;
     flex: 1;
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
+    justify-content: left;
+    height: 90px;
+    position: relative;
+}
+
+.logo img{
+    object-fit: contain;
+    max-height: 100px;
+    max-width: 50%;
+    margin-left: -10%;
 }
 
 .links {
@@ -24,9 +30,6 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .logo{
-        font-size: 32px;
-    }
     .links {
         font-size: 18px;
         gap: 15px;
@@ -37,15 +40,9 @@
     .social{
         display: none;
     }
-    .logo{
-        text-align: left;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    .logo{
-        font-size: 24px;
-    }
 }
 
 @media screen and (max-width: 640px) {

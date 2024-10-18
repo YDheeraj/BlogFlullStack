@@ -1,13 +1,12 @@
-"use client"
+"use client";
+
 import React, { useEffect } from 'react';
+import 'particles.js';
 
 const ParticlesBackground = () => {
   useEffect(() => {
-    const loadParticles = async () => {
-      // Dynamically import particles.js
-      const particlesJS = (await import('particles.js')).default;
-
-      particlesJS("particles-js", {
+    if (typeof window !== 'undefined') {
+      window.particlesJS("particles-js", {
         particles: {
           number: {
             value: 50,
@@ -58,9 +57,7 @@ const ParticlesBackground = () => {
         },
         retina_detect: true
       });
-    };
-
-    loadParticles();
+    }
   }, []);
 
   return (
