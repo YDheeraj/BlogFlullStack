@@ -21,15 +21,15 @@ const ParticlesBackground = () => {
           shape: {
             type: "circle",
             stroke: {
-              width: 0,
+              width: 0.5,
               color: "#000000"
             },
             polygon: {
-              nb_sides: 5
+              nb_sides: 3
             }
           },
           opacity: {
-            value: 0.5
+            value: 0.4
           },
           size: {
             value: 3,
@@ -40,11 +40,11 @@ const ParticlesBackground = () => {
             distance: 150,
             color: "#ffffff",
             opacity: 0.4,
-            width: 1
+            width: 0.5
           },
           move: {
             enable: true,
-            speed: 3
+            speed: 2
           }
         },
         interactivity: {

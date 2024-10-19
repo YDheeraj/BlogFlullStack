@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "postinstall": "prisma generate"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.2",
@@ -18,8 +18,10 @@
     "emailjs-com": "^3.2.0",
     "firebase": "^10.13.2",
     "gsap": "^3.12.5",
+    "install": "^0.13.0",
     "next": "14.2.5",
     "next-auth": "^4.24.7",
+    "npm": "^10.9.0",
     "particles.js": "^2.0.0",
     "react": "^18",
     "react-dom": "^18",
