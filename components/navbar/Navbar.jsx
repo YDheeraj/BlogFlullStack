@@ -9,7 +9,9 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <Image src="/logo.png" alt='logo' fill></Image>
+        <Link href='/'>
+          <Image src="/logo.png" alt='logo' fill></Image>
+        </Link>
       </div>
       <div className={styles.links}>
         <ThemeToggle></ThemeToggle>
