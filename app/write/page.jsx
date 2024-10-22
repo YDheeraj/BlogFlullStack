@@ -7,14 +7,16 @@ import { useSession } from "next-auth/react"
 import { useRouter } from "next/navigation"
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { app } from "/utils/firebase"
-import dynamic from "next/dynamic"
+// import dynamic from "next/dynamic"
+import ReactQuill from "react-quill";
 
 const storage = getStorage(app)
 
 const WritePage = () => {
-  const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
+  // const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
   const { status } = useSession()
+  // const status = 'authenticated'
 
   const router = useRouter();
 
@@ -119,7 +121,7 @@ const WritePage = () => {
         )}
         <ReactQuill className={styles.textArea} theme="bubble" value={value} onChange={setValue} placeholder="Tell your Story"></ReactQuill>
       </div>
-      <button className={styles.publish} onClick={handleSubmit}>Publish</button>
+      <button className={styles.publish} onClick={handleSubmit}>Publis</button>
     </div>
   )
 }
