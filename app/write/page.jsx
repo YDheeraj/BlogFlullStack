@@ -11,7 +11,7 @@ import { app } from "/utils/firebase";
 const storage = getStorage(app);
 
 const WritePage = () => {
-  const status = 'authenticated'; // For testing, replace with useSession hook in production
+  const { status } = useSession()
   const router = useRouter();
 
   const [open, setOpen] = useState(false);
