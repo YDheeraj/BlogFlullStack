@@ -2,14 +2,25 @@ import React from 'react'
 import Link from 'next/link'
 import styles from './menuCategories.module.css'
 
-const MenuCategories = () => {
+const getData = async () => {
+  const res = await fetch("https://blog-flull-stack.vercel.app/api/categories", {
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed")
+  }
+  return res.json();
+};
+
+const MenuCategories = async () => {
+  const data = await getData();
   return (
     <div className={styles.categoryList}>
-    <Link href="/blog?cat=LLM" className={`${styles.categoryItem}`}>LLM</Link>
-    <Link href="/blog?cat=AI" className={`${styles.categoryItem}`}>AI</Link>
-    <Link href="/blog?cat=GPU/GCU" className={`${styles.categoryItem}`}>GPU/GCU</Link>
-    <Link href="/blog?cat=Trends" className={`${styles.categoryItem}`}>Trends</Link>
-    <Link href="/blog?cat=Research" className={`${styles.categoryItem}`}>Research</Link>
+      {
+        data?.map(item => (
+          <Link href={`/catblog/?cat=${item.slug}`} className={`${styles.categoryItem}`}>{item.title}</Link>
+        ))}
   </div>
   )
 }
